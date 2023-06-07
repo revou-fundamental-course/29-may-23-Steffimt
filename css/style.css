@@ -57,6 +57,7 @@
       transform: scaleX(-1);
       position: absolute;
       margin: 11px 5px;
+      cursor: pointer;
   }
   #hero{
       /* height: 578px; */

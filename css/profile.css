@@ -66,6 +66,7 @@
     transform: scaleX(-1);
     position: absolute;
     margin: 2px 5px;
+    cursor: pointer;
 }
   /* #hero{
     height: 578px;
