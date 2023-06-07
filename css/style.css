@@ -30,7 +30,7 @@
   }
   .nav-item{
       padding: 8px 1em;
-      width: 130px;
+      width: 128px;
       border-right: 1px solid black;
       text-align: center;
       cursor: pointer;
@@ -695,7 +695,7 @@
           justify-content: space-between;
           align-items: center;
           padding-left: 2rem;
-          padding-right: 5rem;
+          padding-right: 4rem;
           position: sticky;
           top: 0;
           background-color: white;
