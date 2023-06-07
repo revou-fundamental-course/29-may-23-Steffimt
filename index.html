@@ -4,9 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Company Website</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+    <header>
+        <!-- <img src="assets/logo-telkom.png" alt="logo" class="logo"> -->
+        <img src="img/telkom-logo.png" class="logo">
+        <!-- <div class="navigation"> -->
+            <!-- <div class="menu-icon">
+                <div class="menu-icon__line"></div>
+                <div class="menu-icon__line"></div>
+                <div class="menu-icon__line"></div>
+            </div> -->
+            <div class="nav-bar">
+                <a href="#"><div class="nav-item">Home</div></a>
+                <a href="profile.html"><div class="nav-item">Profile</div></a>
+                <a href="#"><div class="nav-item">Portfolio</div></a>
+                <a href="#"><div class="nav-item">Message Us</div></a>
+            </div>
+        <!-- </div> -->
+    </header>
+    <body>
+    <div class="text">
+        <img src="img/icon.png" class="icon" onclick="myFunction()"></img>
+        <h1>Hi <span id="nama"></span>, Welcome To Website!</h1>
+        <script>
+            var nama=prompt("Masukkan nama kamu");
+            document.getElementById("nama").innerText=nama;
+            console.log(element);
+        </script>
+        <h2>Ini adalah website latihan pertama</h2>
+    </div>
+    <div id="hero">
+        <img src="img/telkom-hero.jpg" alt="hero image" class="hero-img">
+    </div>
+    <div id="headquarters-section">
+        <h1>Our Headquarters</h1>
+        <div class="wrapper">
+            <div class="headquarters-image-container">
+                <div class="headquarters-image">
+                    <img class="resize" src="img/telkom-landmark-tower.jpg">
+                </div>
+                <p>Jakarta</p>
+            </div>
+            <div class="headquarters-image-container">
+                <div class="headquarters-image">
+                    <img class="resize" src="img/telkom-bandung.jpg">
+                </div>
+                <p>Bandung</p>
+            </div>
+            <div class="headquarters-image-container">
+                <div class="headquarters-image">
+                    <img class="resize" src="img/telkom-surabaya.jpg">
+                </div>
+                <p>Surabaya</p>
+            </div>
+        </div>
+    </div>
+    <div id="message-us-section" class="message-us">
+        <form name="message-form" onsubmit="return validateform()">
+            <h1>Message Us</h1>
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input id="input-nama" type="text" name="nama" placeholder="Nama"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input id="input-email" type="text" name="email" placeholder="Email"></td>
+                </tr>
+                <!-- <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input id="input-tanggal" type="date" name="tanggal-lahir"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="gender" value="Laki-laki">Laki-Laki</input>
+                        <input type="radio" name="gender" value="Perempuan">Perempuan</input>
+                    </td>
+                </tr> -->
+                <tr>
+                    <td>Hp</td>
+                    <td>:</td>
+                    <td><input id="input-nomor" type="text" name="nomor" placeholder="Nomor hp"></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:top">Pesan</td>
+                    <td style="vertical-align:top">:</td>
+                    <td>
+                        <textarea name="pesan" placeholder="Pesan"></textarea>
+                    </td>
+                </tr>
+            </table>
+            
+            <input type="submit" id="kirim" value="submit"></input>
+            
+        </form>
+        <!-- <textarea id="detail" name="detail"></textarea> -->
+        <!-- <script>
+            function validateform(){
+                var name = document.forms['message-form']['nama'].value;
+                var email = document.forms['message-form']['email'].value;
+                // var date = document.forms['message-form']['tanggal-lahir'].value;
+                // var gender = document.forms['message-form']['gender'].value;
+                var number = document.forms['message-form']['nomor'].value;
+                var messages = document.forms['message-form']['pesan'].value;
+                if(name=="" ||email=="" || number=="" ||messages==""){
+                    alert("Input tidak boleh kosong");
+                    return false;
+                }
+                document.getElementById("sender-full-name").innerText=name;
+                document.getElementById("sender-email").innerText=email;
+                // document.getElementById("sender-birth-date").innerText=date;
+                // document.getElementById("sender-gender").innerText=gender;
+                document.getElementById("sender-number").innerText=number;
+                document.getElementById("sender-messages").innerText=messages;
+                return false;
+            }
+        </script> -->
+        <div class="form-output">
+            <p>Nama: <span id="sender-full-name"></span></p><br>
+            <p>Email: <span id="sender-email"></span></p><br>
+            <!-- <p>Tanggal-lahir: <span id="sender-birth-date"></span></p><br>
+            <p>Jenis Kelamin: <span id="sender-gender"></span></p><br> -->
+            <p>Hp: <span id="sender-number"></span></p><br>
+            <p>Pesan: <span id="sender-messages"></span></p>
+        </div>
+    </div>
+    <div></div>
+    <footer>Created by Steffi Maria Tanasia</footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
